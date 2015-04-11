@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lock">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="绘制解锁图案"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp15"
+                android:id="@+id/tvWarn"/>
+
+        <com.lockdemo.widget.CustomLockView
+                android:id="@+id/cl"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_marginBottom="@dimen/dp70"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
